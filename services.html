@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Yoto</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- og:description -->
+	<meta property="og:title" content="Se hacen trabajos de programación." />
+	<meta property="og:description" content="
+	
+			Frontend:
+			  🔹 Jscript
+			  🔹 React
+			  🔹 Tailwind Bulma Bootsrap
+			  🔹 UI/UX, Responsive Web Design Figma
+			
+			Backend:
+			🔹 APIREST
+			🔹 Python 🐍 
+			🔹 Django 🦄
+			🔹 NextJS Prisma Firebase
+			
+			CMS:
+			  🔹 Wordpress
+			
+			SEO:
+			  🔹 Google Analytics
+			  🔹 Google Ads
+			  🔹 Google Tag Manager
+			
+			DevOps:
+			🔹 Docker 🐳 
+			🔹 AWS Azure Oracle Google Cloud ☁️ 
+			🔹 Tutorias" />
+	<!-- og:image -->
+	<meta property="og:image" content="https://yotocoder.github.io/assets/css/images/dev.jpg"/>
+	<meta property="og:image:width" content="900"/>
+	<meta property="og:image:height" content="600"/>
+	<meta property="og:image:type" content="image/jpg"/>
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="assets/css/images/favicon.png" type="image/x-icon">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 class="tit">Monthly-50$</h1>
+				<p>Nextjs &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Django &nbsp;&bull;&nbsp; Linux Server
+					&nbsp;&bull;&nbsp; Wordpress</p>
+                    <div class="paypal">
+                        <div id="paypal-button-container-P-1GT95356WB958651AMSAQHJI"></div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=ASTHPDNXGRZT0oBJOMe0bgIGOHnX1CIhRLbExEG8yaR0FJNKJbWf-4Rxd1_0IrL02Z4nqqIr1gVe-eOO&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                        <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'pill',
+                                color: 'gold',
+                                layout: 'vertical',
+                                label: 'subscribe'
+                            },
+                            createSubscription: function(data, actions) {
+                                return actions.subscription.create({
+                                /* Creates the subscription */
+                                plan_id: 'P-1GT95356WB958651AMSAQHJI',
+                                quantity: 1 // The quantity of the product for a subscription
+                                });
+                            },
+                            onApprove: function(data, actions) {
+                                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                            }
+                        }).render('#paypal-button-container-P-1GT95356WB958651AMSAQHJI'); // Renders the PayPal button
+                        </script>
+                    </div>
+				
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+					<script>
+						window.onload = function () { document.body.classList.remove('is-preload'); }
+						window.ontouchmove = function () { return false; }
+						window.onorientationchange = function () { document.body.scrollTop = 0; }
+					</script>
+					<div id="donate-button-container">
+					<div id="donate-button"></div>
+					<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+					<script>
+					PayPal.Donation.Button({
+					env:'production',
+					hosted_button_id:'QY629FLNMW9CS',
+					image: {
+					src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+					alt:'Donate with PayPal button',
+					title:'PayPal - The safer, easier way to pay online!',
+					}
+					}).render('#donate-button');
+					</script>
+					</div>
+				<span class="copyright">&copy; YotoCoder.</span>
+			</footer>
+
+		</div>
+	</div>
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
+	
+</body>
+
+</html>
